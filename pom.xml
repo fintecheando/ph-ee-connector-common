@@ -34,7 +34,6 @@
 		</repository>
 	</repositories>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -106,22 +105,6 @@
 		</dependency>
 	</dependencies>
 
-	<distributionManagement>
-	    <repository>
-		  <snapshots/>
-		  <id>snapshots</id>
-		  <name>libs-snapshot</name>
-		  <url>http://artifactory-flexcore.bitnamiapp.com/artifactory/libs-snapshot</url>
-	    </repository>
-		<snapshotRepository>
-		    <id>snapshots</id>
-		    <name>libs-snapshot-local</name>
-		    <url>http://artifactory-flexcore.bitnamiapp.com/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
-	
-	
-	
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -138,5 +121,15 @@
 		</pluginManagement>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>ph-ee-release</id>
+			<url>http://jenkins.mifos.io:8081/repository/ph-ee-release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>ph-ee-snapshot</id>
+			<url>http://jenkins.mifos.io:8081/repository/ph-ee-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
