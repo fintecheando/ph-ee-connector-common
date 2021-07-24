@@ -23,16 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
-	<repositories>
-		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>modusbox-release-local</id>
-			<name>libs-release</name>
-			<url>https://modusbox.jfrog.io/modusbox/libs-release</url>
-		</repository>
-	</repositories>
+	
 
 	<dependencies>
 		<dependency>
