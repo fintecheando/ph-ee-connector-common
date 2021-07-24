@@ -105,6 +105,22 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+	    <repository>
+		  <snapshots/>
+		  <id>snapshots</id>
+		  <name>libs-snapshot</name>
+		  <url>http://artifactory-flexcore.bitnamiapp.com/artifactory/libs-snapshot</url>
+	    </repository>
+		<snapshotRepository>
+		    <id>snapshots</id>
+		    <name>libs-snapshot-local</name>
+		    <url>http://artifactory-flexcore.bitnamiapp.com/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+	
+	
 	<build>
 		<pluginManagement>
 			<plugins>
